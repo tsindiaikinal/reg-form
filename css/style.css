@@ -65,7 +65,7 @@ body {
   height: 120px;
   margin-left: 2%;
   margin-bottom: 3%;
-  background-color: #004e8f80;
+  background-color: rgba(0, 78, 143, 0.502);
 }
 .social-nets-box1 div:nth-of-type(2) {
   width: 50px;
@@ -116,13 +116,13 @@ body {
   margin-top: -1%;
   margin-left: 14%;
   margin-right: -5%;
-  background-color: #00a0bce6;
+  background-color: rgba(0, 160, 188, 0.902);
 }
 .social-nets-box2 div:nth-of-type(5) {
   width: 89px;
   height: 89px;
   margin-top: 18%;
-  background-color: #7fa6c766;
+  background-color: rgba(127, 166, 199, 0.4);
 }
 .social-nets-box2 div:nth-of-type(6) {
   width: 85px;
@@ -350,7 +350,7 @@ input[type="email"] {
   color: #cbcbcb;
 }
 
-#remember:hover::before {
+.tooltip-container:hover ::before {
   content: "You no longer need to enter \A a password every time you use the site";
   white-space: pre-line;
   position: absolute;
