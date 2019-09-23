@@ -159,7 +159,7 @@ body {
   height: 25px;
 }
 
-.pop-up {
+.reg-form {
   display: flex;
   flex-direction: column;
   /* width: 65vw; */
@@ -182,7 +182,7 @@ body {
   -o-border-radius: 10px;
 }
 
-.pop-up__title {
+.reg-form__title {
   width: 100%;
   height: 120px;
   position: relative;
@@ -224,7 +224,7 @@ h4 {
   color: #676767;
 }
 
-.pop-up__container-forms {
+.reg-form__container-forms {
   display: flex;
   height: 100%;
   margin: 10px 25px 30px;
@@ -237,31 +237,31 @@ form {
   justify-content: space-around;
 }
 
-.pop-up__form-signin {
+.reg-form__form-signin {
   height: 75%;
   margin-top: 10px;
 }
 
-.pop-up__form-signin input[type="text"],
-.pop-up__form-signin input[type="password"] {
+.reg-form__form-signin input[type="text"],
+.reg-form__form-signin input[type="password"] {
   height: 60px;
   padding-left: 55px;
 }
 
-.pop-up__form-signin input[type="text"]::placeholder,
-.pop-up__form-signin input[type="password"]::placeholder {
+.reg-form__form-signin input[type="text"]::placeholder,
+.reg-form__form-signin input[type="password"]::placeholder {
   font-size: 1.375rem;
   font-weight: 500;
   color: #e9e9e9;
 }
 
-.pop-up__form-reg input[type="text"],
-.pop-up__form-reg input[type="password"],
-.pop-up__form-reg input[type="email"] {
+.reg-form__form-reg input[type="text"],
+.reg-form__form-reg input[type="password"],
+.reg-form__form-reg input[type="email"] {
   height: 55px;
 }
 
-.pop-up__form-reg label {
+.reg-form__form-reg label {
   margin-bottom: 0;
   color: #676767;
 }
@@ -271,7 +271,7 @@ form {
   background-image: url(../img/warning-sign.svg);
 }
 
-.pop-up__form-signin > span {
+.reg-form__form-signin > span {
   width: 100%;
   text-align: center;
   position: relative;
@@ -441,14 +441,15 @@ hr {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
-  .pop-up {
+  .reg-form {
     width: 60vw;
     height: auto;
   }
 
-  .pop-up__title {
+  .reg-form__title {
     height: 80px;
     line-height: 80px;
+    font-size: 1.2rem;
   }
 
   .icon-enter-data {
@@ -468,33 +469,33 @@ hr {
     font-size: 1.1rem;
   }
 
-  .pop-up__container-forms {
+  .reg-form__container-forms {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 25px 20px;
   }
 
-  .pop-up__form-signin {
+  .reg-form__form-signin {
     height: 65%;
     margin-top: 0;
   }
 
-  .pop-up__form-signin input[type="text"],
-  .pop-up__form-signin input[type="password"] {
+  .reg-form__form-signin input[type="text"],
+  .reg-form__form-signin input[type="password"] {
     height: 40px;
     margin-top: 10px;
     padding-left: 55px;
   }
 
-  .pop-up__form-signin input[type="text"]::placeholder,
-  .pop-up__form-signin input[type="password"]::placeholder {
+  .reg-form__form-signin input[type="text"]::placeholder,
+  .reg-form__form-signin input[type="password"]::placeholder {
     font-size: 1.2rem;
   }
 
-  .pop-up__form-reg input[type="text"],
-  .pop-up__form-reg input[type="password"],
-  .pop-up__form-reg input[type="email"] {
+  .reg-form__form-reg input[type="text"],
+  .reg-form__form-reg input[type="password"],
+  .reg-form__form-reg input[type="email"] {
     height: 40px;
   }
 
@@ -598,12 +599,12 @@ hr {
 /* MEDIA QUERIES 570 PX */
 
 @media screen and (max-width: 570px) {
-  .pop-up {
+  .reg-form {
     width: 85vw;
     height: auto;
   }
 
-  .pop-up__title {
+  .reg-form__title {
     height: 70px;
     line-height: 70px;
     font-size: 4vw;
@@ -619,11 +620,11 @@ hr {
     font-size: .7rem;
   }
 
-  #remember:hover::before {
+  .tooltip-container:hover ::before {
     left: 0;
     width: 230px;
     height: 60px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   /* .submit-btn-signin {
     align-self: flex-start;
