@@ -158,7 +158,6 @@ body {
 
 .reg-form {
   width: 65%;
-  height: auto;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -227,7 +226,7 @@ body {
 }
 
 h4 {
-  padding-bottom: 5px;
+  padding-bottom: 5%;
   font-size: 1.25rem;
   font-weight: 600;
   color: #676767;
@@ -235,25 +234,24 @@ h4 {
 
 .reg-form__container-forms {
   display: flex;
-  height: 50vh;
-  margin: 10px 25px 30px;
+  /* height: 100%; */
+  margin: 20px 25px 30px;
 }
 
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .reg-form__form-signin {
-  height: 75%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .reg-form__form-signin input[type="text"],
 .reg-form__form-signin input[type="password"] {
   height: 60px;
+  margin-bottom: 35px;
   padding-left: 55px;
 }
 
@@ -268,10 +266,11 @@ form {
 .reg-form__form-reg input[type="password"],
 .reg-form__form-reg input[type="email"] {
   height: 55px;
+  margin-bottom: 15px;
 }
 
 .reg-form__form-reg label {
-  margin-bottom: 0;
+  margin-bottom: 12px;
   color: #676767;
 }
 
@@ -285,7 +284,7 @@ form {
   text-align: center;
   position: relative;
   align-self: center;
-  padding-bottom: 35px;
+  padding-bottom: 65px;
   overflow: hidden;
 }
 
@@ -382,8 +381,8 @@ input[type="email"] {
 }
 
 hr {
-  height: 77%;
-  margin: 60px 25px auto;
+  height: 350px;
+  margin: 55px 25px auto;
   border: 0.5px solid lightgray;
   opacity: 0.2;
 }
@@ -452,7 +451,7 @@ hr {
 @media screen and (max-width: 767px) {
   .reg-form {
     width: 60vw;
-    height: auto;
+    /* max-height: 605px; */
   }
 
   .reg-form__title {
@@ -479,14 +478,13 @@ hr {
   }
 
   .reg-form__container-forms {
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 25px 20px;
   }
 
   .reg-form__form-signin {
-    height: 65%;
+    /* height: 65%; */
     margin-top: 0;
   }
 
