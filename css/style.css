@@ -234,7 +234,6 @@ h4 {
 
 .reg-form__container-forms {
   display: flex;
-  /* height: 100%; */
   margin: 20px 25px 30px;
 }
 
@@ -484,14 +483,18 @@ hr {
   }
 
   .reg-form__form-signin {
-    /* height: 65%; */
-    margin-top: 0;
+    margin-top: 10px;
+  }
+
+  .reg-form__form-signin > span {
+    padding-bottom: 55px;
   }
 
   .reg-form__form-signin input[type="text"],
   .reg-form__form-signin input[type="password"] {
     height: 40px;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
     padding-left: 55px;
   }
 
@@ -504,6 +507,11 @@ hr {
   .reg-form__form-reg input[type="password"],
   .reg-form__form-reg input[type="email"] {
     height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .reg-form__form-reg label {
+    margin-bottom: 5px;
   }
 
   .checkbox-container {
@@ -606,7 +614,7 @@ hr {
   .checkbox-container {
     justify-content: space-between;
     align-items: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .tooltip-container:hover ::before {
