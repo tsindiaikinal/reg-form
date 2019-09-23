@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>whidegroup</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="social-nets-box1">
+        <div>
+          <a href="#"><img src="img/github.svg" alt="github"/></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/linkedin.svg" alt="linkedin"/></a>
+        </div>
+        <h3 class="account-window-title">
+          login to your account / register new
+        </h3>
+        <div>
+          <a href="#"><img src="img/romashka.svg" alt="romashka"/></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/facebook.svg" alt="facebook"/></a>
+        </div>
+      </div>
+      <div class="social-nets-box2">
+        <div>
+          <a href="#"><img src="img/twitter.svg" alt="twitter"/></a>
+        </div>
+        <div></div>
+        <div>
+          <a href="#"><img src="img/romashka.svg" alt="romashka"/></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/linkedin.svg" alt="linkedin"/></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/github.svg" alt="github"/></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/twitter.svg" alt="twitter"/></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/twitter.svg" alt="twitter"/></a>
+        </div>
+      </div>
+      <section class="pop-up">
+        <h3 class="pop-up__title">
+          <span class="icon-enter-data"
+            ><img src="img/enter_data.svg" alt="Enter your data"/></span
+          >login to your account / register new
+        </h3>
+        <div class="pop-up__container-forms">
+          <form
+            class="needs-validation pop-up__form-signin"
+            novalidate
+            action="heandler.php"
+            method="POST"
+            id="form-signin"
+          >
+            <span><span class="icon-circle-slash">/</span></span>
+            <input
+              class="form-control"
+              type="text"
+              id="user-login"
+              name="login"
+              placeholder="User Name"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a username.
+            </div>
+            <input
+              class="form-control"
+              type="password"
+              id="user-pass"
+              name="pass"
+              placeholder="Password"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter your password.
+            </div>
+            <div class="checkbox-container">
+              <label for="remember"
+                ><input type="checkbox" id="remember" name="remember_me" />
+                Remember My password</label
+              >
+              <input class="submit-btn-signin" type="submit" value="Login" />
+            </div>
+          </form>
+          <hr />
+          <form
+            class="needs-validation pop-up__form-reg"
+            novalidate
+            action="heandler.php"
+            method="POST"
+            id="form-reg"
+          >
+            <h4 class="pop-up__form-title">Register</h4>
+            <label for="reg-email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="reg-email"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a email.
+            </div>
+            <label for="reg-user">User Name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="reg_user_name"
+              id="reg-user"
+            />
+            <label for="reg-pass">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="reg_pass"
+              id="reg-pass"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a password.
+            </div>
+            <input class="submit-btn-reg" type="submit" value="Register" />
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
