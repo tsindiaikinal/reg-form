@@ -352,7 +352,7 @@ input[type="email"] {
 
 #remember:hover::before {
   content: "You no longer need to enter \A a password every time you use the site";
-  /* white-space: pre-line; */
+  white-space: pre-line;
   position: absolute;
   z-index: 3;
   top: 40px;
