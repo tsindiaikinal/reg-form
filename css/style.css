@@ -194,7 +194,6 @@ body {
 .reg-form__title {
   width: 100%;
   height: 120px;
-  position: relative;
   text-transform: capitalize;
   text-align: center;
   line-height: 120px;
@@ -244,14 +243,29 @@ form {
   flex-direction: column;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
 .reg-form__form-signin {
+  height: 300px;
+  justify-content: space-between;
   margin-top: 25px;
 }
 
 .reg-form__form-signin input[type="text"],
 .reg-form__form-signin input[type="password"] {
   height: 60px;
-  margin-bottom: 35px;
+  /* margin-bottom: 40px; */
   padding-left: 55px;
 }
 
@@ -284,7 +298,8 @@ form {
   text-align: center;
   position: relative;
   align-self: center;
-  padding-bottom: 65px;
+  padding-bottom: 40px;
+  margin-bottom: -18px;
   overflow: hidden;
 }
 
@@ -324,19 +339,6 @@ form {
   margin-top: -11px;
   margin-left: -162px;
   background-image: linear-gradient(to left, #cecece, transparent);
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  display: block;
-  width: 100%;
-  border: 1px solid #cecece;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 .checkbox-container {
