@@ -21,10 +21,9 @@
       });
     },
     false
-    );
-  })();
-  let scene = document.querySelector("#social-nets-box1");
-  new Parallax(scene);
-  let scene2 = document.querySelector("#social-nets-box2");
-  new Parallax(scene2);
-  
+  );
+})();
+let scene = document.querySelector("#social-nets-box1");
+new Parallax(scene);
+let scene2 = document.querySelector("#social-nets-box2");
+new Parallax(scene2);
