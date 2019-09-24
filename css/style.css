@@ -344,7 +344,7 @@ input[type="email"] {
   overflow: hidden;
 
   width: 100%;
-  margin-bottom: -18px;
+  margin-bottom: -15px;
   padding-bottom: 40px;
 
   text-align: center;
@@ -727,5 +727,11 @@ hr {
 
     width: 230px;
     height: 60px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .reg-form__container {
+    overflow-y: scroll;
   }
 }
